@@ -10,3 +10,6 @@ select count(replacement_cost) from film;
 select count(title) from film where title ~~* 't%' and rating ='G';
 select count (country) from country where country ~~* '_____';
 select count (city) from city where city ~~'R%r';
+select title from film where title ~~'%n' order by length desc limit 5;
+select title from film where title ~~'%n' order by length asc offset 5 limit 5;
+select * from customer where store_id=1 order by last_name desc limit 4;
