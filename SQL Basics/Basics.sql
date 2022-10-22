@@ -13,3 +13,7 @@ select count (city) from city where city ~~'R%r';
 select title from film where title ~~'%n' order by length desc limit 5;
 select title from film where title ~~'%n' order by length asc offset 5 limit 5;
 select * from customer where store_id=1 order by last_name desc limit 4;
+select avg(rental_rate) from film;
+select count(title) from film where title ~~'C%';
+select max (length) from film where rental_rate = 0.99;
+select count (distinct replacement_cost)  from film where length > 150;
