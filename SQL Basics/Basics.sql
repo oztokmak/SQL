@@ -5,3 +5,8 @@ select country from country where country ~~ 'A%a';
 select country from country where country ~~ '_______%n';
 SELECT title FROM film WHERE title ILIKE '%t%t%t%t';
 select * from film where title ~~ 'C%' and length>90 and rental_rate = 2.99;
+select distinct replacement_cost from film;
+select count(replacement_cost) from film;
+select count(title) from film where title ~~* 't%' and rating ='G';
+select count (country) from country where country ~~* '_____';
+select count (city) from city where city ~~'R%r';
