@@ -58,9 +58,9 @@ insert into employee (id, name, email, birthday) values (50, 'Ethelred Boyington
 
 
 UPDATE FROM employee
-SET  name = 'Melih Anıl Eroğlu',
-        birthday = '1998-01-09',
-        email = 'melihanileroglu@gmail.com'
+SET  name = 'Jake Amberson',
+        birthday = '1960-01-09',
+        email = 'j.amberson@gmail.com'
         WHERE  id BETWEEN 1 AND 5
 RETURNING *;
 
